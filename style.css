@@ -1,0 +1,15 @@
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.image {
+    background-image: url("https://media.discordapp.net/attachments/971727360430850062/1092815251424153620/man-3672010_1280.jpg?");
+    background-repeat: no-repeat;
+    height: 545px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
