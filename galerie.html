@@ -46,11 +46,34 @@
           <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093181099397615747/black-and-white-2590810_1280.jpg?"></div>
           <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093181099892539422/couple-437968_1280.jpg?"></div>
           <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093181158243713024/couple-1718244_1280.jpg?"></div>
-          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093181100953718794/fashion-3080644_1280.jpg?"></div>
-          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093181158797348874/lion-1118467_1280.jpg?"></div>
+          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278433896824922/monkey-3703230_1280.jpg?"></div>
+          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278374107025509/african-lion-2888519_1280.jpg?"></div>
           <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093186060374249565/girl-2696947_1280.jpg?"></div>
+          <div class="grid-item mariage"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278452930580551/wedding-1846114_1280.jpg?"></div>
+          <div class="grid-item mariage"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278431443165224/couple-260899_1280.jpg?"></div>
+          <div class="grid-item mariage"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278452578271232/sunset-698501_1280.jpg?"></div>
+          <div class="grid-item grossese"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278452125282466/pregnant-775036_1280.jpg?"></div>
+          <div class="grid-item grossese"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278434458878023/pregnancy-5098881_1280.jpg?"></div>
+          <div class="grid-item grossese"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278375784747068/booties-2047596_1280.jpg?"></div>
+          <div class="grid-item bébé"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278374346117171/baby-428395_1280.jpg?"></div>
+          <div class="grid-item bébé"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278374614536342/baby-933097_1280.jpg?"></div>
+          <div class="grid-item bébé"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278375369527336/baby-2935722_1280.jpg?"></div>
+          <div class="grid-item famille"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278376858484816/buildings-2602324_1280.jpg?"></div>
+          <div class="grid-item famille"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278432437223444/family-2485714_1280.jpg?"></div>
+          <div class="grid-item famille"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278432772751431/family-4610864_1280.jpg?"></div>
+          <div class="grid-item baptême"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278377147912304/christening-6848190_1280.jpg?"></div>
+          <div class="grid-item baptême"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278376183201892/boy-6899073_1280.jpg?"></div>
+          <div class="grid-item baptême"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278376594264134/brothers-457234_1280.jpg?"></div>
+          <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278431787090040/couple-1194312_1280.jpg?"></div>
+          <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278432172974131/couple-6653517_1280.jpg?"></div>
+          <div class="grid-item couple"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278434161074297/people-2562102_1280.jpg?"></div>
+          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278433557102602/hijab-3064633_1280.jpg?"></div>
+          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278433087332384/girl-2529907_1280.jpg?"></div>
+          <div class="grid-item portrait"><img src="https://media.discordapp.net/attachments/971727360430850062/1093278377542160474/close-up-1721060_1280.jpg?"></div>
         </div>
       </div>
+
+
       <script>
         var filterButtons = document.querySelectorAll('.filter-button');
         var gridItems = document.querySelectorAll('.grid-item');
@@ -71,6 +94,25 @@
             });
           });
         });
+
+        // Sélectionnez toutes les images dans la grille
+const images = document.querySelectorAll(".grid img");
+
+// Bouclez à travers chaque image
+images.forEach((image) => {
+  // Ajoutez un écouteur de clic à chaque image
+  image.addEventListener("click", () => {
+    // Créez un élément de div pour l'image agrandie
+    const fullscreen = document.createElement("div");
+    fullscreen.classList.add("fullscreen");
+    // Ajoutez l'image cliquée à l'élément de div
+    const img = document.createElement("img");
+    img.src = image.src;
+    fullscreen.appendChild(img);
+    // Ajoutez l'élément de div au corps de la page
+    document.body.appendChild(fullscreen);
+  });
+});
       </script>
 </body>
 </html>
