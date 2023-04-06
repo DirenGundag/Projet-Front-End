@@ -95,7 +95,7 @@
           });
         });
 
-        // Sélectionnez toutes les images dans la grille
+// Sélectionnez toutes les images dans la grille
 const images = document.querySelectorAll(".grid img");
 
 // Bouclez à travers chaque image
@@ -109,10 +109,16 @@ images.forEach((image) => {
     const img = document.createElement("img");
     img.src = image.src;
     fullscreen.appendChild(img);
+    // Ajoutez un écouteur de clic pour réduire l'image
+    fullscreen.addEventListener("click", () => {
+      fullscreen.classList.remove("fullscreen");
+      fullscreen.removeChild(img);
+    });
     // Ajoutez l'élément de div au corps de la page
     document.body.appendChild(fullscreen);
   });
 });
+
       </script>
 </body>
 </html>
