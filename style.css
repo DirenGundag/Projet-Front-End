@@ -5,7 +5,7 @@
 .image {
     background-image: url("https://media.discordapp.net/attachments/971727360430850062/1093164725908541452/jpg_20230405_152106_0000.jpg?");
     background-repeat: no-repeat;
-    height: 545px;
+    height: 505px;
 }
 
 h1 {
@@ -13,6 +13,7 @@ h1 {
     text-align: center;
     padding-top: 20%;
     font-family: Adlery Swash;
+    font-size: 50px;
 }
 
 .titretarifs {
@@ -198,7 +199,31 @@ h1 {
   .logo {
     height: 80px;
     width: 170px;
+    margin-left: 2%;
   }
+  .logofb {
+    width: 30px;
+  }
+  .logoinsta {
+    width: 30px;
+  }
+  .nav-links {
+    margin-left: 280px;
+  }
+  .navbar-nav .logofb, .navbar-nav .logoinsta {
+    margin-left: 280px;
+    margin-right: -260px;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 4%;
+  }
+ form {
+  border: 2px solid;
+ }
+
+
+  
   
   
   
