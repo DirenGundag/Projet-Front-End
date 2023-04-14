@@ -1,0 +1,41 @@
+.titretarifs {
+    text-align: center;
+    margin-top: 2%;
+}
+.cadre {
+    border: 2px solid ;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 30%;
+    float: left;
+    margin-left: 2.5%;
+    margin-top: 4%;
+    height: 190px;
+    border-radius: 4%;
+    background-color: #eee;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin: 0 0 10px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 320px) {
+    .cadre p {
+      font-size: 8px;
+    }
+    .cadre h3 {
+      font-size: 10px;
+    }
+    .prix {
+        margin-top: -14px;
+    }
+  }
+  
+  .prix {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  
+  

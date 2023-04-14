@@ -1,0 +1,17 @@
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+}
+
+.image {
+    background-image: url("https://media.discordapp.net/attachments/971727360430850062/1093164725908541452/jpg_20230405_152106_0000.jpg?");
+    background-repeat: no-repeat;
+    height: 505px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+    font-family: Adlery Swash;
+    font-size: 50px;
+}
