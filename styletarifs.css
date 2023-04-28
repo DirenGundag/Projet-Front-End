@@ -1,6 +1,7 @@
 .titretarifs {
     text-align: center;
     margin-top: 2%;
+    font-family: arial;
 }
 .cadre {
     border: 2px solid ;
@@ -19,6 +20,7 @@
     font-size: 24px;
     margin: 0 0 10px;
     text-align: center;
+    font-family: arial;
   }
   @media only screen and (max-width: 320px) {
     .cadre p {
@@ -35,7 +37,11 @@
   .prix {
     font-weight: bold;
     text-align: center;
+    font-family: arial;
   }
-
+ 
+  p{
+    font-family: arial;
+  }
   
   

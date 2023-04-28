@@ -1,0 +1,28 @@
+.navbar-light .navbar-nav .nav-link{
+    color: black;
+    font-family: arial;
+}
+
+.logo {
+    height: 80px;
+    width: 170px;
+    margin-left: 2%;
+  }
+.logofb {
+    width: 30px;
+  }
+.logoinsta {
+    width: 30px;
+  }
+.nav-links {
+    margin-left: 280px;
+  }
+.navbar-nav .logofb, .navbar-nav .logoinsta {
+    margin-left: 280px;
+    margin-right: -260px;
+  }
+
+  
+  
+  
+  

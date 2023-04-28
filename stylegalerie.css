@@ -21,6 +21,7 @@
     color: #333;
     font-size: 16px;
     cursor: pointer;
+    font-family: arial;
   }
   
   .filter-button.active {

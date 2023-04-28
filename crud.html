@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="stylecrud.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <script>
+        $(function(){
+          $("#navbar").load("index.html");
+        });
+    </script>
+    <div class="espace">
+    <form>
+      <label>Titre:</label>
+      <input type="text" id="titre">
+      <br>
+      <label>Description:</label>
+      <textarea id="description"></textarea>
+      <br>
+      <label>Prix:</label>
+      <input type="number" id="prix">
+      <br>
+      <button type="button" onclick="ajouterProduit()" class="boutonajouter">Ajouter</button>
+    </form>
+    <hr>
+    <table id="table-produits">
+      <thead>
+        <tr>
+          <th>Titre</th>
+          <th>Description</th>
+          <th>Prix</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="produits.js"></script>
+<script>
+    // produits.js
+
+let produits = [];
+
+function ajouterProduit() {
+  const titre = document.getElementById("titre").value;
+  const description = document.getElementById("description").value;
+  const prix = document.getElementById("prix").value;
+
+  const produit = {
+    titre,
+    description,
+    prix
+  };
+
+  produits.push(produit);
+  afficherProduits();
+}
+
+function afficherProduits() {
+  const tbody = document.querySelector("#table-produits tbody");
+  tbody.innerHTML = "";
+
+  for (const produit of produits) {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td>${produit.titre}</td>
+      <td>${produit.description}</td>
+      <td>${produit.prix} €</td>
+      <td>
+        <button type="button" onclick="modifierProduit(${produits.indexOf(produit)})" class="boutonmodifier">Modifier</button>
+        <button type="button" onclick="supprimerProduit(${produits.indexOf(produit)})" class="boutonsupprimer">Supprimer</button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  }
+}
+
+function supprimerProduit(index) {
+  produits.splice(index, 1);
+  afficherProduits();
+}
+
+function modifierProduit(index) {
+      const produit = produits[index];
+      document.getElementById("titre").value = produit.titre;
+      document.getElementById("description").value = produit.description;
+      document.getElementById("prix").value = produit.prix;
+      produits.splice(index, 1);
+      afficherProduits();
+    }
+</script>
+</div>
+</body>
+</html>

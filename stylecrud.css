@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+
+  form {
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 4%;
+    border: 2px solid black;
+    margin-bottom: 7%;
+    margin-left: 30%;
+    padding: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+  }
+  form textarea {
+    height: 150px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #eee;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #eee;
+    color: black;
+  }
+
+  table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 5%;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+
+  .delete-button {
+    background-color: #eee;
+    color: black;   
+  }
+
+  .delete-button:hover {
+    background-color: #eee;
+    color: black;
+  }
+  .espace{
+    margin-bottom: 10%;
+  }
+  .boutonajouter{
+    background-color: #eee;
+    color: black;
+    margin-left: 40%;
+    border-radius: 10px;
+    margin-top: 4%;
+  }
+  .boutonsupprimer{
+    background-color: #eee;
+    color: black;
+    margin-left: 20%;
+    border-radius: 10px;
+  }
+  .boutonmodifier{
+    background-color: #eee;
+    color: black;
+    margin-left: 15%;
+    border-radius: 10px;
+  }
