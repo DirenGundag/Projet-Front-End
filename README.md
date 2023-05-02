@@ -11,7 +11,7 @@ J'ai rajouté une page pour montrer le CRUD en Javascript qui est disponible via
 
 J'ai déployé mon site sur la plateforme Netlify. Pour que vous puissiez avoir accès au site, voici le lien "https://projetfrontend.netlify.app/accueil.html". Ceci vous redirigera vers la page d'accueil de mon site. Vous pourrez par la suite naviguer vers les autres pages en cliquant sur les rubriques qui sont dans le header. 
 
-De plus, tous les fichiers demandés (charte graphique, wireframes) sont dans le dossier "Charte graphique et wireframes " un fichier en PDF qui est dans mon projet Git.
+De plus, tous les fichiers demandés sont dans un fichier en PDF (Charte graphique et wireframes.pdf) qui est dans mon projet Git.
 
 # Démarches à suivres pour le déploiement en ligne :
 
